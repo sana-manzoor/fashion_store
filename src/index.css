@@ -1,13 +1,281 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar{
+  display: none;
+}
+
+.hh{
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700; /* Make it bolder for better visibility */
+  color: rgb(159, 5, 5); /* Brand's color, can be adjusted for contrast */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add subtle shadow for emphasis */
+  font-size: 1.7rem; /* Large font size for logos */
+  letter-spacing: 2px; /* Slight spacing for a modern feel */
+  margin: 0;
+  padding: 0;
+  display: inline-block; /* Ensure it's treated like a logo block */
+  text-transform: capitalize;
+    
+ 
+}
+
+.hh2{
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700; /* Make it bolder for better visibility */
+  color: rgb(159, 5, 5); /* Brand's color, can be adjusted for contrast */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add subtle shadow for emphasis */
+  font-size: 1.7rem; /* Large font size for logos */
+  letter-spacing: 2px; /* Slight spacing for a modern feel */
+  margin: 0;
+  padding: 0;
+  display: inline-block; /* Ensure it's treated like a logo block */
+  text-transform: capitalize;
+    
+ 
+}
+
+
+.lk{
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+ 
+}
+
+
+.lk:hover{
+  font-size:22px ;
+  transform: scale(1.1);
+
+}
+
+.bgg3{
+  background-image: url("/public/cc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) { /* For devices with width ≤ 768px */
+  .bgg3 {
+    height: 320px;
+    
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1024px) { /* For devices with width ≤ 768px */
+  .bgg3 {
+    height: 500px;
+  }
+}
+
+
+@media (max-width: 768px) { /* For devices with width ≤ 768px */
+  .agg {
+    height: 320px;
+    
+    
+  }
+}
+
+@media (min-width: 1024px) { /* For devices with width ≤ 768px */
+  .agg {
+    height: 500px;
+  }
+}
+
+
+
+
+.ip1 {
+  border-color: rgb(0, 0, 0) !important;  
+}
+
+.ip1:focus {
+  outline: none !important;
+  box-shadow: 0 0 0px rgba(255, 254, 254, 0.5) !important;
+  border-color: black !important;
+}
+
+
+.button-49 {
+  appearance: none;
+  background-color: rgb(159, 5, 5);
+  border-width: 0;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.0em 1.5em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1), background-color 100ms cubic-bezier(.694, 0, 0.335, 1), color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  border-radius: 5%;
+  overflow: hidden; /* Ensure pseudo-elements don't overflow */
+}
+
+.button-49:before {
+  animation: opacityFallbackOut 0.5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: white;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path 0.5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+  z-index: 1; /* Layer is just above the button background */
+  pointer-events: none; /* Prevent interference with hover */
+}
+
+.button-49:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-49 span {
+  z-index: 2; /* Ensure text is on top */
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.button-49:hover span {
+  color: rgb(159, 5, 5);
+  font-size:20px ;
+  transform: scale(1.1);
+}
+
+
+
+.button-94 {
+  appearance: none;
+  background-color: rgb(159, 5, 5);
+  border-width: 0;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.0em 1.4em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1), background-color 100ms cubic-bezier(.694, 0, 0.335, 1), color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  border-radius: 5%;
+  overflow: hidden; /* Ensure pseudo-elements don't overflow */
+}
+
+.button-94:before {
+  animation: opacityFallbackOut 0.5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: white;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  /* height: 100%; */
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path 0.5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+  z-index: 1; /* Layer is just above the button background */
+  pointer-events: none; /* Prevent interference with hover */
+}
+
+.button-94:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-94 span {
+  z-index: 2; /* Ensure text is on top */
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.button-94:hover span {
+  color: white;
+  font-size:14px ;
+  transform: scale(1.1);
+}
+
+
+
+.c-img{
+width: 200px;
+height: 140px;
+
+}
+
+@media (max-width: 768px) { /* For devices with width ≤ 768px */
+  .c-img {
+    width: 70px;
+    height: 60px;
+    padding: 0px !important;
+    margin: 0px !important;
+    
+  }
+}
+
+@media (max-width: 768px) { /* For devices with width ≤ 768px */
+  .c-p {
+    overflow-x: scroll;
+    
+  }
+}
+
+@media (max-width: 768px) { /* For devices with width ≤ 768px */
+  .allcc {
+    overflow-x: scroll;
+  }
+  .kk{
+    height: 60px;
+    width: 50px;
+  }
+  .tt{
+    overflow-x: scroll;
+  }
+  .ll{
+    overflow-x: scroll;
+  }
 }

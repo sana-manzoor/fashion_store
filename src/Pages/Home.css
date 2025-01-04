@@ -1,0 +1,128 @@
+.bgg{
+    background-image: url("/public/pixelcut-export.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @media (max-width: 768px) { /* For devices with width ≤ 768px */
+    .bgg {
+      height: 270px;
+      
+      background-size: cover;
+    }
+  }
+  
+  @media (min-width: 1024px) { /* For devices with width ≤ 768px */
+    .bgg {
+      height: 500px;
+    }
+  }
+  
+  .hhh{
+    font-weight: 900;
+    font-style: normal; 
+    font-family: "Tenor Sans", sans-serif;
+    color: rgb(81, 78, 78);
+  }
+  
+  .hhh2{
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    color: rgb(159, 5, 5); 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    
+  }
+  .button-48 {
+    appearance: none;
+    background-color: rgb(159, 5, 5);
+    border-width: 0;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Clarkson, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 0;
+    opacity: 1;
+    outline: 0;
+    padding: 1.5em 2.2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1), background-color 100ms cubic-bezier(.694, 0, 0.335, 1), color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+    border-radius: 5%;
+    overflow: hidden; /* Ensure pseudo-elements don't overflow */
+  }
+  
+  .button-48:before {
+    animation: opacityFallbackOut 0.5s step-end forwards;
+    backface-visibility: hidden;
+    background-color: white;
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path 0.5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path 0.5s cubic-bezier(.165, 0.84, 0.44, 1);
+    width: 100%;
+    z-index: 1; /* Layer is just above the button background */
+    pointer-events: none; /* Prevent interference with hover */
+  }
+  
+  .button-48:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  }
+  
+  .button-48 span {
+    z-index: 2; /* Ensure text is on top */
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .button-48:hover span {
+    color: rgb(159, 5, 5);
+    font-size:20px ;
+    transform: scale(1.1);
+  }
+
+  .ht1{
+  
+    font-style: normal; 
+    font-family: "Tenor Sans", sans-serif;
+    color: rgb(81, 78, 78);
+  }
+
+  .ht2{
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 700;
+    color: rgb(159, 5, 5); 
+    letter-spacing: 3px;
+  }
+
+  .imgg{
+    height: 130px;
+    width: 140px;
+  }
+  
+  p{
+    color: grey;
+  }
+
+  @media (max-width: 768px) { /* For devices with width ≤ 768px */
+    .dd {
+      overflow-x: scroll;
+    }
+  }

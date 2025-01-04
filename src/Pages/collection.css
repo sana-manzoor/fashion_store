@@ -1,0 +1,22 @@
+.custom-toggle-button {
+    background-color: white; /* Green background */
+    color: black; /* White text */
+    font-size: 21px; /* Font size */
+    border: none; /* Remove default border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for 3D effect */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+    cursor: pointer;
+    text-align: start;
+  }
+  
+  /* Hover effect */
+  .custom-toggle-button:hover {
+    background-color: white; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift the button slightly */
+  }
+  
+  /* Active (clicked) state */
+  .custom-toggle-button:active {
+    background-color: white; /* Even darker green */
+    transform: translateY(0); /* Reset the button's position */
+  }
