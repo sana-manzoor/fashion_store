@@ -87,6 +87,31 @@ function Cart() {
     return (
         <>
             {
+
+                cartlist?.length > 0 ?
+
+
+
+                    <div className="p-5 row gx-0" style={{ minHeight: '80vh' }}>
+                        <div className="col-md-8 me-5 c-p" >
+                            {/* <h2 className="text-center ht1 m-4">cart <span className='ht2'>SUMMARY..</span> </h2> */}
+
+                            <table className="table mt-5 ht1 table-bordered table-hover shadow  " >
+                                <thead className='m-5'>
+                                    <tr>
+                                        <th></th>
+                                        <th>Title</th>
+                                        <th ></th>
+                                        <th>Price</th>
+                                        <th> P.Quantity</th>
+                    {/* <th>Total Price</th> */}
+                                        <th></th>
+                                    </tr>                    
+                                </thead>
+
+                                <tbody>
+
+                                    {
                                         cartlist?.map((item, index) => (
                                             <tr>
                                                 <td  style={{fontSize:'10px'}}>{index + 1}</td>
