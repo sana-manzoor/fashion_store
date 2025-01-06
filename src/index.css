@@ -249,7 +249,7 @@ height: 140px;
 
 @media (max-width: 768px) { /* For devices with width ≤ 768px */
   .c-img {
-    width: 70px;
+    width: 50px;
     height: 60px;
     padding: 0px !important;
     margin: 0px !important;
