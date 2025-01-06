@@ -87,51 +87,26 @@ function Cart() {
     return (
         <>
             {
-
-                cartlist?.length > 0 ?
-
-
-
-                    <div className="p-5 row gx-0" style={{ minHeight: '80vh' }}>
-                        <div className="col-md-8 me-5 c-p" >
-                            {/* <h2 className="text-center ht1 m-4">cart <span className='ht2'>SUMMARY..</span> </h2> */}
-
-                            <table className="table mt-5 ht1 table-bordered table-hover shadow p-3 " >
-                                <thead className='m-5'>
-                                    <tr>
-                                        <th>Id</th>
-                                        <th>Title</th>
-                                        <th ></th>
-                                        <th>Price</th>
-                                        <th>Quantity</th>
-                                        {/* <th>Total Price</th> */}
-                                        <th></th>
-                                    </tr>
-                                </thead>
-
-                                <tbody>
-
-                                    {
                                         cartlist?.map((item, index) => (
                                             <tr>
-                                                <td>{index + 1}</td>
-                                                <td>{item.title}</td>
+                                                <td  style={{fontSize:'10px'}}>{index + 1}</td>
+                                                <td style={{fontSize:'11px'}}>{item.title}</td>
                                                 <td className='d-flex justify-content-center'>
                                                     <img src={`${BASE_URL}/upload/${item.image}`} className='c-img' alt="" />
                                                 </td>
                                                 {/* <!-- <td>{{i.price}}</td> --> */}
                                                 <td> {item.price}</td>
                                                 <td>
-                                                    <span>
-                                                        <button className="btn" onClick={() => { increasee(item._id) }} >+</button>
+                                                    <div  style={{fontSize:'15px'}}>
+                                                        <button className="btn"  style={{fontSize:'10px'}} onClick={() => { increasee(item._id) }} >+</button>
                                                         {item.quantity}
-                                                        <button className="btn" onClick={() => { decreasee(item._id) }} >-</button>
+                                                        <button className="btn"  style={{fontSize:'10px'}} onClick={() => { decreasee(item._id) }} >-</button>
 
-                                                    </span>
+                                                    </div>
 
                                                 </td>
 
-                                                <td onClick={() => { deletecartt(item._id) }} ><i className="fa-solid fa-trash fa-xl" style={{ cursor: 'pointer' }} ></i></td>
+                                                <td onClick={() => { deletecartt(item._id) }} ><i className="fa-solid fa-trash fa-lg" style={{ cursor: 'pointer' }} ></i></td>
                                             </tr>
 
 
